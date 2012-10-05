@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 old" lang="fr"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 old" lang="fr"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 old" lang="fr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="fr"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>jQuery simpleLightbox</title>
+	<meta name="description" content="desc">
+	<meta name="author" content="Benoit Decomble">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined'){
+    	document.write(unescape("%3Cscript src='js/libs/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>  
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+		#main-wrapper{
+			display: block;
+			width: 800px;
+			margin: 30px auto 0 auto;
+		}
+		h1 {
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="main-wrapper">
+			<h1>jQuery simpleLightbox</h1>
+			<a class="lightbox" href="images/img-big.jpg"><img src="images/thb.jpg"></a>
+		</div>
+	</div>
+	<script src="js/libs/jquery.simplelightbox.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('a.lightbox').simpleLightbox();	
+		})
+	</script>
+</body>
+</html>
